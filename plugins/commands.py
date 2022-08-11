@@ -45,12 +45,12 @@ async def start(client, message):
             InlineKeyboardButton('🔸ɢʀᴏᴜᴘ 1🔸', url='https://t.me/+3SSAvOkxW_hjMDJl'),
             InlineKeyboardButton('🔸ɢʀᴏᴜᴘ 2🔸', url='https://t.me/+KjgLbxaw_8M4NDA9')
             ],[ 
-            InlineKeyboardButton('🔗 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 🔗', url=f'https://t.me/+NqEpYwqvzdIwYWU1')
+            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[     
             InlineKeyboardButton('❗️ʜᴇʟᴘ❗️', callback_data='help'),
             InlineKeyboardButton('❕ᴀʙᴏᴜᴛ❕', callback_data='about')
             ],[
-            InlineKeyboardButton('🌚 ʙᴏᴛ ᴏᴡɴᴇʀ 👻', url='https://t.me/Ichappi23')
+            InlineKeyboardButton('🔗 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 🔗', url=f'https://t.me/+NqEpYwqvzdIwYWU1')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -93,12 +93,12 @@ async def start(client, message):
             InlineKeyboardButton('🔸ɢʀᴏᴜᴘ 1🔸', url='https://t.me/+3SSAvOkxW_hjMDJl'),
             InlineKeyboardButton('🔸ɢʀᴏᴜᴘ 2🔸', url='https://t.me/+KjgLbxaw_8M4NDA9')
             ],[ 
-            InlineKeyboardButton('🔗 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 🔗', url=f'https://t.me/+NqEpYwqvzdIwYWU1')
+            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[     
             InlineKeyboardButton('❗️ʜᴇʟᴘ❗️', callback_data='help'),
             InlineKeyboardButton('❕ᴀʙᴏᴜᴛ❕', callback_data='about')
             ],[
-            InlineKeyboardButton('🌚 ʙᴏᴛ ᴏᴡɴᴇʀ 👻', url='https://t.me/Ichappi23')
+            InlineKeyboardButton('🔗 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 🔗', url=f'https://t.me/+NqEpYwqvzdIwYWU1')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
