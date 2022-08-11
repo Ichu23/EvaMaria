@@ -806,6 +806,8 @@ async def advantage_spell_chok(msg):
     if not g_s:
         btn = [[
             InlineKeyboardButton('INSTRUCTION', callback_data=tipss')
+            ],[
+            InlineKeyboardButton('SEARCH GOOGLE', url=f'https://google.com/search?q={msg.text.replace("","+")}')
         ]]
         k = await msg.reply("I couldn't find any movie in that name.")
         await asyncio.sleep(8)
