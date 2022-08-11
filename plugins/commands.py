@@ -140,13 +140,16 @@ async def start(client, message):
                     f_caption=f_caption
             if f_caption is None:
                 f_caption = f"{title}"
-            buttons = 
+            buttons = [[
+            InlineKeyboardButton('LATEST MOVIES', url='https://t.me/CMT_link')
+               ]]
             try:
                 await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
+                    reply_markup=InlineKeyboardMarkuo(buttons),
                     )
             except FloodWait as e:
                 await asyncio.sleep(e.x)
@@ -245,11 +248,15 @@ async def start(client, message):
             f_caption=f_caption
     if f_caption is None:
         f_caption = f"{files.file_name}"
+    buttons = [[
+            InlineKeyboardButton('LATEST MOVIES', url='https://t.me/CMT_link')
+        ]]
     await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
+        reply_markup=InlineKeyboardMarkup(buttons),
         )
                     
 
