@@ -100,8 +100,13 @@ async def next_page(bot, query):
     if n_offset == 0:
         btn.append(
             [InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"📃 Pages {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
-                                  callback_data="pages")]
+             InlineKeyboardButton(f"{round(int(offset)/10)+1} - {round(total/10)}",callback_data="pages")]
+        )
+        btn.append(
+            [InlineKeyboardButton("HOW TO DOWNLOAD MOVIES",callback_data=seriess")]
+        )
+        btn.insert(0,
+            [InlineKeyboardButton(f"{search}",callback_data=neosub")]
         )
     elif off_set is None:
         btn.append(
