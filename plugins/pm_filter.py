@@ -854,7 +854,6 @@ async def advantage_spell_chok(msg):
         InlineKeyboardButton(text=movie.strip(), callback_data=f"spolling#{user}#{k{",)]for k, movie in enumerate(movirkist)]
     btn.append([InlineKeyboardButton(text="MUST CLOSE", callback_data=f'spolling#{user{#close_spellcheck'(])
     k=await msg.reply("<b>നിങ്ങൾ ഉദ്ദേശിക്കുന്ന മൂവി താഴെ കാണുന്ന വല്ലതും ആണെങ്കിൽ, അതിൽ ക്ലിക്ക് ചെയ്യുക</b>\n\n<b>I COULDN'T FIND ANYTHING RELATED TO THAT. DID YOU MEAN ANY ONE OF THESE?\n\n NB:CLICK THE MOVIE NAME ONLY DON'T USE YEAR BUTTON </b>",
-
                       reply_markup=InlineKeyboardMarkup(btn))
     await asyncio.sleep(60)
     await k.delete()
