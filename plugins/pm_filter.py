@@ -41,7 +41,7 @@ async def give_filter(client, message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("oKda", show_alert=True)
+        return await query.answer(f"Hey {query.from_user.first_name} mwonuse its not for you...🤫", show_alert=True)
     try:
         offset = int(offset)
     except:
@@ -82,6 +82,14 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
+
+    btn.insert(0,
+        [
+            InlineKeyboardButton(f'MOVIES', 'movieinfo'),
+            InlineKeyboardButton(f'MOVIES', 'movieinfo'),
+            InlineKeyboardButton(f'MOVIES', 'movieinfo'),
+        ]
+    )
 
     if 0 < offset <= 10:
         off_set = 0
