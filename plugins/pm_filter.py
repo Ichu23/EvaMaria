@@ -859,7 +859,6 @@ async def advantage_spell_chok(msg):
     await k.delete()
     await msg.delete()
 
-
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
     name = text or message.text
